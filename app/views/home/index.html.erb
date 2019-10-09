@@ -1,0 +1,243 @@
+    <header>
+      <h1>Andre's Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+
+
+      </ul>
+
+      <!-- A Search form is another commmon non-linear way to navigate through a website. -->
+
+      <form>
+        <input type="search" name="q" placeholder="Search query">
+        <input type="submit" value="Go!">
+      </form>
+    </nav>
+
+    <!-- Navigation Bar Container -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!-- Logo and responsive toggle -->
+        <div class="navbar-header">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon-fire"></span>
+            LOGO
+          </a>
+          <!-- Responsive Navigation Button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div><!-- /.navbar-header -->
+
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <%= link_to "Home","/" %>
+            </li>
+            <li>
+              <%= link_to "Terms","/" %>
+            </li>
+            <li>
+              <%= link_to "Refections","/" %>
+            </li>
+            <li>
+              <%= link_to "Contact Me","/" %>
+            </li>
+            <li>
+              <%= link_to "Directory","/" %>
+            </li>
+            <li>
+              <%= link_to "Resources","/" %>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container -->
+    </nav>
+
+
+
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1>Andre Sterling</h1>
+          <h2>Summer 1</h2>
+          <h3>Rich-3</h3>
+          <p>Click below to see what clothing I'm working on making.</p>
+          <a id="registration" href="https://www.instagram.com/uniquehoodmerch/?hl=en" class="btn btn-primary btn-lg">Unique Hood Merch Products</a>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
+            <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
+            <p class="text-light">Welcome Sentence(s)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content 1 -->
+    <section id="about_me" class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="">
+          </div>
+          <div class="col-sm-6">
+            <h2 class="section-header">About Me</h2>
+            <p class="lead text-muted" <a href="#"></a>My name is Andre Sterling I'm from Richmond California. I grew up in Easter Hill I played football for the Richmond Steelers. I love music and sports. I'm in highschool I go to Making Waves Academy
+              and play on the basketball team. And I'm a part time rapper. I'm working on making a clothing line and want to open my own store and sell the clothes I make..</p>
+            <a href="portfolio.html" class="btn btn-primary btn-lg">Portfolio</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Promos -->
+    <div class="container-fluid">
+      <div class="row promo">
+        <a href="terms.html">
+          <article class="col-md-4 promo-item item-1">
+            <h3>
+              Terms
+            </h3>
+          </article>
+        </a>
+        <a href="reflections.html">
+          <article class="col-md-4 promo-item item-2">
+            <h3>
+              Reflections
+            </h3>
+          </article>
+        </a>
+
+        <a href="mybrothers.html">
+          <article class="col-md-4 promo-item item-3">
+            <h3>
+              Know My Brothers
+            </h3>
+          </article>
+        </a>
+      </div>
+    </div>
+
+    <!-- Content 3 -->
+    <section class="content content-3">
+      <div class="container">
+        <h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> My Future Plans</h2>
+        <p class="lead text-muted">After highschool I want to go onto collage and play football or basketball. And I will be a bigger rapper. When I am done with collage I plan to open and run my own store selling my clothing brand products.</p>
+        <a href="https://www.instagram.com/uniquehoodmerch/?hl=en" class="btn btn-primary btn-lg">Unique Hood Merch Products</a>
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+
+      <!-- Contact Us -->
+      <div id="contact_me" class="contact">
+        <div class="container">
+          <section id="contact">
+
+            <h1 class="form-section-header">CONTACT</h1>
+
+            <div class="contact-wrapper">
+
+              <!--   CONTACT PAGE LEFT   -->
+
+              <form class="form-horizontal" role="form" method="post" action="contact.php">
+
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                  </div>
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                  <div class="button">
+                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                  </div>
+
+                </button>
+
+              </form>
+
+              <!--       CONTACT PAGE RIGHT       -->
+
+              <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Richmond | CA</span></i></li>
+
+                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(510) 688-5061</a></span></i></li>
+
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">andre.sterling@hgs.hiddengeniusproject.org</a></span></i></li>
+
+                </ul>
+                <hr>
+
+                <ul class="social-media-list">
+                  <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-github" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+        </div>
+      </div>
+
+      <!-- Copyright etc -->
+      <div class="small-print">
+        <div class="container">
+          <p>Copyright &copy; Example.com 2015</p>
+        </div>
+      </div>
+
+    </footer>
